@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 25px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Intro {
+  margin: 25px;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#615d5d;
+}
+header {
+  background-color: #f0ecdd;
+  margin: 100px;
+  background-image: linear-gradient(to right, #6ED8F4, #C96EF4);
+  box-shadow: 2px 4px 7px rgba(2, 1, 3, 0.2);
+  padding: 15px;
+}
+
+header .subreddit_input {
+  display: inline-block;
+  color: #F3F3F3;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+header:before {
+  content: "/r/";
+  display: inline-block;
+  color: #F3F3F3; 
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.articles article {
+  margin: 15px;
+  box-shadow: 2px 4px 7px rgba(2, 1, 3, 0.2);
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 20px 15px;
+  background-color: #FFF;
+  color: #615d5d;
+}
+
+.articles article a {
+  text-decoration: none;
+}
+
+.articles article h3 {
+  color: #615d5d;
+}
+
+.articles article:nth-child(2n) {
+  background-color: #F3F3F3;
+}
+
+.articles article:hover {
+  background-image: linear-gradient(to right, #6ED8F4, #C96EF4);
+}
+
+.articles article:hover h3 {
+  color: #FFF;
 }
